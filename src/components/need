@@ -1,0 +1,107 @@
+import React, {useState } from "react";
+import "./weather.css";
+import axios from "axios"
+
+
+//usestate
+//temp
+//settemp
+// is still not working oo+
+// to be able to pull the data to the mai surface. si if I inspect it, I am able to see it from ther
+function Weather(props) { 
+
+  const [city, setCity]=useState("");
+  const [temp, setTemp]=useState("");
+ 
+
+
+    function showweather(city){
+  axios
+  .get(
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=105ce953cde35584a8658700b5a46803`
+  )
+  .then((response) => {
+    //Control Response
+    console.log(response);
+    setTemp(response.data.main.temp);
+    console.log(temp);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+
+
+    }
+
+
+  function formweather(event) {
+    event.preventDefault()
+
+    showweather(city)
+  }
+    
+
+  function handleSearch(event) {
+    setCity(event.target.value)
+  }
+
+
+
+
+
+
+
+
+
+  return (
+    <div className="pic">
+      <div className="back">
+        <div className="container__Weather">
+          <div className="widget">
+            <div className="left">
+              <img src="../img/cloud.svg" className="icon" alt="" />
+              <h5 className="weather-status">Partly Cloud</h5>
+            </div>
+            <div className="name"></div>
+            <div className="right">
+              <div>
+
+
+              <form className=""  onSubmit={formweather} >
+          <div className=" ">
+            <input type="text" className="" value={city} onChange={handleSearch} style={{ height: 56 }} placeholder="Search for..." />
+            <span className="">
+              <button className="" type="submit" style={{ height: 56 }}>Go!</button>
+            </span>
+          </div>
+          </form>
+                
+              </div>
+              <h5 className="city">
+              <button type="submit">
+              search</button>
+              </h5>
+              <h5 className="city__Cancel">
+                <button>Cancel</button>
+              </h5>
+              <h6 className="degree">{temp}&deg;F</h6>
+            </div>
+            <div className="bottom">
+              <div>
+                Wind Speed <span>22 kmph</span>
+              </div>
+              <div>
+                Cloud Cover <span className="">22%</span>
+              </div>
+              <div>
+                Pressure <span>1010 mb</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Weather;

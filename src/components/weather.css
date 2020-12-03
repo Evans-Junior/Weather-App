@@ -1,0 +1,146 @@
+.pic {
+  background-color: sandybrown;
+  background-image: url("../img/bg1.png");
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+ 
+.container__Weather {
+  display: flex;
+ justify-content: center;
+  /* top: 50%;
+  left: 50%;
+  bottom: 55px;
+  padding: 20px;
+  position: absolute;
+  transform: translate(-50%, -50%); */
+align-items: stretch;
+align-content: center;
+}
+
+ .widget {
+  margin-top: 10%;
+  width: 900px;
+  height: 350px;
+  border-radius: 20px;
+  background: rgba(299, 299, 299, 0.4);
+}
+
+.left {
+  position: relative;
+  left: 415px;
+  bottom: -8px;
+  color: #fff;
+  width: 200px;
+}
+
+.icon {
+  width: 75%;
+  margin-bottom: -30px;
+  display: block;
+  margin-left: -35px;
+
+}
+.weather-status {
+  font: normal;
+}
+
+.input {
+  position: absolute;
+  border-color: rgb(177, 113, 57);
+  left: 331px;
+  bottom: 290px;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  text-decoration: none;
+  outline-width: 0;
+}
+
+.city {
+  position: absolute;
+  left: 500px;
+  bottom: 190px;
+  text-align: center;
+  font-weight: 750;
+  color: white;
+}
+
+.city > button {
+  background: rgb(177, 113, 57);
+  border-color: rgb(177, 113, 57);
+  color: rgb(102, 24, 24);
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.city__Cancel{
+  position: absolute;
+  left: 300px;
+  bottom: 190px;
+  border-radius: 8px;
+  }
+  
+  .city__Cancel > button {
+    background: rgb(177, 113, 57);
+    border-color: rgb(177, 113, 57);
+    color: rgb(102, 24, 24);
+    font-weight: bold;
+    border-radius: 8px;
+  }
+
+  .name{
+    color: #fff;
+    position: absolute;
+    right:30%;
+    bottom: 325px;
+  }
+
+  .degree {
+    font-size: 3em;
+    position: absolute;
+    right:37%;
+    bottom: 260px;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+  }
+
+  .degree_one {
+    font-size: 3em;
+    position: absolute;
+    right:24%;
+    bottom: 260px;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+  }
+
+
+  .bottom {
+    width: 100%;
+    position: absolute;
+    left: 720px;
+    bottom: 195px;
+    display: flex;
+    color: #fff;
+  }
+
+  .bottom > div {
+    margin: 5px 10px 5px 10px;
+    text-align: center;
+    line-height: 100%;
+    font-size: 0.83em;
+    text-shadow: 1px 1px 5px #707070;
+  }
+
+.bottom > div > span {
+  padding: 10px;
+  display: block;
+  font-weight: bold;
+
+} 

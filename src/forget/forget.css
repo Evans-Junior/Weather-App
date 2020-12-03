@@ -1,0 +1,16 @@
+.insta {
+  background-color: sandybrown;
+  background-image: url("../img/forget.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.container {
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  position: absolute;
+  align-items: center;
+}

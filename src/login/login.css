@@ -1,0 +1,49 @@
+.login-wrap {
+  background-color: sandybrown;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.container__Login {
+  display: flex;
+  justify-content: center;
+
+  /*transform: translate(-50%, -50%);*/
+ /* padding-left: 40%;*/
+ padding-top: 11%; 
+  z-index: 0;
+}
+
+
+
+.last {
+  text-align: center;
+}
+
+.cont__Card {
+  width: 350px;
+  height: 250px;
+  border-radius: 20px;
+  background: rgba(299, 299, 299, 0.4);
+}
+.login {
+  margin: 50px auto;
+}
+.Login {
+  padding: 60px 0;
+}
+
+
+
+.login-form {
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+.forget {
+  color: rgb(223, 69, 22);
+}

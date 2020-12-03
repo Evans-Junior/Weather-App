@@ -1,0 +1,14 @@
+ .get(
+      "https://api.openweathermap.org/data/2.5/weather?q=Accra&appid=105ce953cde35584a8658700b5a46803"
+    )
+    .then((response) => {
+      //Control Response
+      console.log(response);
+      const temp = response.data.main.temp;
+      console.log(temp);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+
+    https://github.com/RJ-0605/more-react-weather/blob/mikesbranch/src/App.jsx
